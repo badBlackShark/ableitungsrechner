@@ -6,4 +6,9 @@ public class Exp extends Function{
 	public Exp(Function op1) {
 		this.op1 = op1;
 	}
+	
+	public String print() {
+		
+		return "exp(" + op1.print() + ")";
+	}
 }

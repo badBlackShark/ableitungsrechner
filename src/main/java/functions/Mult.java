@@ -8,4 +8,9 @@ public class Mult extends Function {
 		this.op1 = op1;
 		this.op2 = op2;
 	}
+	
+	public String print() {
+		
+		return op1.print() + "*" + op2.print();
+	}
 }

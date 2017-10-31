@@ -6,4 +6,9 @@ public class Constant extends Function {
 	public Constant(int op1) {
 		this.op1 = op1;
 	}
+	
+	public String print() {
+		
+		return Integer.toString(op1);
+	}
 }
