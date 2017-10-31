@@ -9,7 +9,7 @@ public class Polynom extends Function {
 		this.base = base;
 	}
 	
-	public Mult ableitung() {
+	public Mult ableiten() {
 		return new Mult(new Constant(exp), new Polynom(base, exp-1));
 	}
 	
