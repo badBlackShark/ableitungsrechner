@@ -6,4 +6,9 @@ public class Sinus extends Function {
 	public Sinus(Function op1) {
 		this.op1 = op1;
 	}
+	
+	public String print() {
+		
+		return "sin(" + op1.print() + ")";
+	}
 }

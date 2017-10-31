@@ -1,6 +1,7 @@
 package functions;
 
 public class Minus extends Function{
+
 	private Function op1;
 	private Function op2;
 

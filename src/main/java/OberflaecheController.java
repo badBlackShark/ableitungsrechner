@@ -27,6 +27,10 @@ public class OberflaecheController implements Initializable{
 		//print tree
 		BTreePrinter.printNode(root);
 		
+		Function mult1 = new Mult(new Constant(3), new Constant(4));
+		
+		textAusgeben(mult1.print());
+		
 	}
 	
 	public void textAusgeben(String text) {

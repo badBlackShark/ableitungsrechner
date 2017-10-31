@@ -28,6 +28,9 @@
                      <padding>
                         <Insets top="3.0" />
                      </padding>
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
                   </TextField>
                   <Button fx:id="EingabeButton" mnemonicParsing="false" prefHeight="0.0" prefWidth="66.0" scaleX="2.0" scaleY="2.0" text="Eingeben" translateX="50.0" translateY="80.0" />
                </children>
@@ -38,7 +41,10 @@
          </children></AnchorPane>
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
          <children>
-            <TextArea fx:id="Ausgabefenster" layoutX="214.0" layoutY="-18.0" prefHeight="196.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <TextArea fx:id="Ausgabefenster" layoutX="214.0" layoutY="-18.0" prefHeight="196.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="18.0" />
+               </font></TextArea>
          </children></AnchorPane>
   </items>
    <padding>

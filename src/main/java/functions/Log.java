@@ -6,4 +6,9 @@ public class Log extends Function {
 	public Log(Function op1) {
 		this.op1 = op1;
 	}
+	
+	public String print() {
+		
+		return "ln(" + op1.print() + ")";
+	}
 }
