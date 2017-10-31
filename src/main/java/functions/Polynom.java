@@ -11,6 +11,11 @@ public class Polynom extends Function {
 	
 	public Polynom ableitung() {
 		base = new Constant(base.getOperand()*exp);
-		return new Polynom(base, exp-1);
+		exp = exp-1;
+		return new Polynom(base, exp);
+	}
+	
+	public String print() {
+		return ""+base.getOperand()+"x^"+exp;
 	}
 }
