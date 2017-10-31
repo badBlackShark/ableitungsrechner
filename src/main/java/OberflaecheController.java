@@ -32,7 +32,7 @@ public class OberflaecheController implements Initializable{
 		Function add1 = new Plus(exp1, new Cosinus(new Constant(3)));
 		Function mult2 = new Mult(add1, mult1);
 		
-		textAusgeben(mult1.print());
+		textAusgeben(mult2.print());
 		
 	}
 	
