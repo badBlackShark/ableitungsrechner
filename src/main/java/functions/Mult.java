@@ -13,4 +13,9 @@ public class Mult extends Function {
 		
 		return op1.print() + "*" + op2.print();
 	}
+	
+	public Plus ableiten() {
+		//TODO op1, op2 kopieren
+		return new Plus(new Mult(op1.ableiten(), op2) , new Mult(op1, op2.ableiten()));
+	}
 }
