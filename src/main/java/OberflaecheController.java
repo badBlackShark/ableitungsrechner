@@ -28,8 +28,8 @@ public class OberflaecheController implements Initializable{
 		BTreePrinter.printNode(root);
 		
 		Function mult1 = new Mult(new Constant(3), new Constant(4));
-		Function exp1 = new Exp(new Constant(3));
-		Function add1 = new Plus(exp1, new Cosinus(new Constant(3)));
+		Function exp1 = new Exp(new Constant(5));
+		Function add1 = new Plus(exp1, new Cosinus(new Constant(2)));
 		Function mult2 = new Mult(add1, mult1);
 		
 		textAusgeben(mult2.print());
