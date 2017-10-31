@@ -1,4 +1,4 @@
-class Node<T extends Comparable<?>> {
+class Node<T> {
     Node<T> left, right;
     T data;
 
