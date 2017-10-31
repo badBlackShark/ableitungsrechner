@@ -13,4 +13,9 @@ public class Plus extends Function {
 		
 		return "(" + op1.print() + "+" + op2.print() + ")" ;
 	}
+	
+	public Plus ableiten() {
+		
+		return new Plus(op1.ableiten(), op2.ableiten());
+	}
 }
