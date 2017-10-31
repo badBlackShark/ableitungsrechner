@@ -1,6 +1,6 @@
 package functions;
 
-public class Plus {
+public class Plus extends function {
 	private function op1;
 	private function op2;
 
