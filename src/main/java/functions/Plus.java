@@ -11,6 +11,6 @@ public class Plus extends Function {
 	
 	public String print() {
 		
-		return op1.print() + "+" + op2.print();
+		return "(" + op1.print() + "+" + op2.print() + ")" ;
 	}
 }
