@@ -14,4 +14,8 @@ public class Constant extends Function {
 	public String print() {
 		return Integer.toString(op1);
 	}
+	
+	public Constant ableiten() {
+		return new Constant(0);
+	}
 }
