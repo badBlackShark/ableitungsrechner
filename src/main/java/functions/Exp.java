@@ -1,9 +1,9 @@
 package functions;
 
-public class Exp extends function{
-	private function op1;
+public class Exp extends Function {
+	private Function op1;
 
-	public Exp(function op1) {
+	public Exp(Function op1) {
 		this.op1 = op1;
 	}
 }
