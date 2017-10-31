@@ -2,20 +2,18 @@ package functions;
 
 public class Polynom extends Function {
 	private int exp;
-	private Constant base;
+	private Function base;
 
-	public Polynom(Constant base, int exp) {
+	public Polynom(Function base, int exp) {
 		this.exp = exp;
 		this.base = base;
 	}
 	
-	public Polynom ableitung() {
-		base = new Constant(base.getOperand()*exp);
-		exp = exp-1;
-		return new Polynom(base, exp);
+	public Mult ableiten() {
+		return new Mult(new Constant(exp), new Polynom(base, exp-1));
 	}
 	
 	public String print() {
-		return ""+base.getOperand()+"x^"+exp;
+		return ""+base.print()+"x^"+exp;
 	}
 }
