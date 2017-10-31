@@ -1,6 +1,6 @@
 package functions;
 
-public class Constant extends function {
+public class Constant extends Function {
 	private int op1;
 
 	public Constant(int op1) {

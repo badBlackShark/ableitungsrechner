@@ -16,9 +16,9 @@ public class OberflaecheController implements Initializable{
 	@Override
 	public void initialize(java.net.URL location, ResourceBundle resources) {
 		//create Nodes
-		Node <function> left = new Node<function>(new Constant(3));
-		Node <function> right = new Node<function>(new Constant(4));
-		Node <function> root = new Node<function>(new Mult(left.data, right.data));
+		Node <Function> left = new Node<Function>(new Constant(3));
+		Node <Function> right = new Node<Function>(new Constant(4));
+		Node <Function> root = new Node<Function>(new Mult(left.data, right.data));
 		
 		//create Tree
 		root.left = left;
