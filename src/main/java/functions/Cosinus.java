@@ -11,4 +11,8 @@ public class Cosinus extends Function {
 		
 		return "cos(" + op1.print() + ")";
 	}
+	
+	public Mult ableiten() {
+		return new Mult(op1.ableiten(), new Sinus(op1));
+	}
 }
