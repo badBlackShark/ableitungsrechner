@@ -14,11 +14,13 @@ public class OberflaecheController implements Initializable{
 
 	@Override
 	public void initialize(java.net.URL location, ResourceBundle resources) {
-		// TODO Auto-generated method stub
+		
 		
 	}
 	
-	
+	public void textAusgeben(String text) {
+		Ausgabefenster.appendText(text);
+	}
 }
 
 
