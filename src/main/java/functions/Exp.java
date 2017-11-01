@@ -11,4 +11,8 @@ public class Exp extends Function {
 
 		return "exp(" + op1.print() + ")";
 	}
+	
+	public Mult ableiten() {
+		return new Mult(op1.ableiten(), new Exp(op1));
+	}
 }

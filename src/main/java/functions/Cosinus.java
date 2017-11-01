@@ -13,6 +13,6 @@ public class Cosinus extends Function {
 	}
 	
 	public Mult ableiten() {
-		return new Mult(op1.ableiten(), new Sinus(op1));
+		return new Mult(op1.ableiten(), new Mult(new Constant(-1), new Sinus(op1)));
 	}
 }
