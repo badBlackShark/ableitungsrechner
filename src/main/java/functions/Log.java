@@ -11,4 +11,9 @@ public class Log extends Function {
 		
 		return "ln(" + op1.print() + ")";
 	}
+	
+	public Mult ableiten() {
+		
+		return new Mult(op1.ableiten(), new Polynom(op1, -1));
+	}
 }
