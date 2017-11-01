@@ -14,6 +14,6 @@ public class Polynom extends Function {
 	}
 	
 	public String print() {
-		return ""+base.print()+"x^"+exp;
+		return "("+base.print()+"x^("+exp+"))";
 	}
 }

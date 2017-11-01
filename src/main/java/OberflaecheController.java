@@ -15,18 +15,9 @@ public class OberflaecheController implements Initializable{
 
 	@Override
 	public void initialize(java.net.URL location, ResourceBundle resources) {
-		//create Nodes
-		Node <Function> left = new Node<Function>(new Constant(3));
-		Node <Function> right = new Node<Function>(new Constant(4));
-		Node <Function> root = new Node<Function>(new Mult(left.data, right.data));
 
-		//create Tree
-		root.left = left;
-		root.right = right;
-
-		//print tree
-		BTreePrinter.printNode(root);
-
+		//Tests
+		//TODO Unit-Tests!
 		Function mult1 = new Mult(new Constant(3), new Constant(4));
 
 		Function pol1 = new Polynom(new Constant(3), 2);
@@ -54,6 +45,12 @@ public class OberflaecheController implements Initializable{
 		textAusgeben(exp2.print());
 		Ausgabefenster.appendText("\n");
 		textAusgeben(exp2.ableiten().print());
+		
+		Ausgabefenster.appendText("\n");
+		Function sinus = new Mult(new Polynom(new Constant(-3), 4), new Sinus(new Polynom(new Constant(3), 7)));
+		textAusgeben(sinus.print());
+		Ausgabefenster.appendText("\n");
+		textAusgeben(sinus.ableiten().print());
 
 
 	}
