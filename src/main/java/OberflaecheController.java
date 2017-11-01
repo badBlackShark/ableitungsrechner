@@ -30,10 +30,14 @@ public class OberflaecheController implements Initializable{
 		Function mult1 = new Mult(new Constant(3), new Constant(4));
 
 		Function pol1 = new Polynom(new Constant(3), 2);
+		Function polAbl = pol1.ableiten();
+		
 
 		textAusgeben(mult1.print());
 		Ausgabefenster.appendText("\n");
 		textAusgeben(pol1.print());
+		Ausgabefenster.appendText("\n");
+		textAusgeben(polAbl.print());
 
 		Function exp1 = new Exp(new Constant(5));
 		Function add1 = new Plus(exp1, new Cosinus(new Constant(2)));
@@ -41,6 +45,15 @@ public class OberflaecheController implements Initializable{
 		Ausgabefenster.appendText("\n");
 
 		textAusgeben(mult2.print());
+		Function mult2Abl = mult2.ableiten();
+		Ausgabefenster.appendText("\n");
+		textAusgeben(mult2Abl.print());
+		
+		Ausgabefenster.appendText("\n");
+		Function exp2 = new Exp(new Polynom(new Plus(new Polynom(new Constant(3),1),new Constant(4)), 3));
+		textAusgeben(exp2.print());
+		Ausgabefenster.appendText("\n");
+		textAusgeben(exp2.ableiten().print());
 
 
 	}
