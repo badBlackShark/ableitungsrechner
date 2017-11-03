@@ -13,7 +13,7 @@ public class Polynom extends Function {
 		return new Mult(new Constant(exp), new Polynom(base, exp-1));
 	}
 	
-	public String print() {
-		return "("+base.print()+"x^("+exp+"))";
+	public String toString() {
+		return "("+base.toString()+"x^("+exp+"))";
 	}
 }

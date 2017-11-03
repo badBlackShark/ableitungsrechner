@@ -7,10 +7,7 @@ public class Exp extends Function {
 		this.op1 = op1;
 	}
 
-	public String print() {
-
-		return "exp(" + op1.print() + ")";
-	}
+	public String toString() { return "exp(" + op1.toString() + ")"; }
 	
 	public Mult ableiten() {
 		return new Mult(op1.ableiten(), new Exp(op1));

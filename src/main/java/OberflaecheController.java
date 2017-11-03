@@ -1,6 +1,7 @@
 import java.util.ResourceBundle;
 
 import functions.*;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -24,33 +25,33 @@ public class OberflaecheController implements Initializable{
 		Function polAbl = pol1.ableiten();
 		
 
-		textAusgeben(mult1.print());
+		textAusgeben(mult1.toString());
 		Ausgabefenster.appendText("\n");
-		textAusgeben(pol1.print());
+		textAusgeben(pol1.toString());
 		Ausgabefenster.appendText("\n");
-		textAusgeben(polAbl.print());
+		textAusgeben(polAbl.toString());
 
 		Function exp1 = new Exp(new Constant(5));
 		Function add1 = new Plus(exp1, new Cosinus(new Constant(2)));
 		Function mult2 = new Mult(add1, mult1);
 		Ausgabefenster.appendText("\n");
 
-		textAusgeben(mult2.print());
+		textAusgeben(mult2.toString());
 		Function mult2Abl = mult2.ableiten();
 		Ausgabefenster.appendText("\n");
-		textAusgeben(mult2Abl.print());
+		textAusgeben(mult2Abl.toString());
 		
 		Ausgabefenster.appendText("\n");
 		Function exp2 = new Exp(new Polynom(new Plus(new Polynom(new Constant(3),1),new Constant(4)), 3));
-		textAusgeben(exp2.print());
+		textAusgeben(exp2.toString());
 		Ausgabefenster.appendText("\n");
-		textAusgeben(exp2.ableiten().print());
+		textAusgeben(exp2.ableiten().toString());
 		
 		Ausgabefenster.appendText("\n");
 		Function sinus = new Mult(new Polynom(new Constant(-3), 4), new Sinus(new Polynom(new Constant(3), 7)));
-		textAusgeben(sinus.print());
+		textAusgeben(sinus.toString());
 		Ausgabefenster.appendText("\n");
-		textAusgeben(sinus.ableiten().print());
+		textAusgeben(sinus.ableiten().toString());
 
 
 	}
@@ -60,4 +61,8 @@ public class OberflaecheController implements Initializable{
 	}
 
 
+	public void parseInput(ActionEvent actionEvent) {
+		String userInput = EingabeFeld.getText();
+		EingabeFeld.clear();
+	}
 }

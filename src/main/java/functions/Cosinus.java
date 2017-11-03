@@ -7,10 +7,7 @@ public class Cosinus extends Function {
 		this.op1 = op1;
 	}
 	
-	public String print() {
-		
-		return "cos(" + op1.print() + ")";
-	}
+	public String toString() { return "cos(" + op1.toString() + ")"; }
 	
 	public Mult ableiten() {
 		return new Mult(op1.ableiten(), new Mult(new Constant(-1), new Sinus(op1)));

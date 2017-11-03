@@ -9,10 +9,7 @@ public class Mult extends Function {
 		this.op2 = op2;
 	}
 	
-	public String print() {
-		
-		return op1.print() + "*" + op2.print();
-	}
+	public String toString() { return op1.toString() + "*" + op2.toString(); }
 	
 	public Plus ableiten() {
 		//TODO op1, op2 kopieren

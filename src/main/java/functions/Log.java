@@ -7,10 +7,7 @@ public class Log extends Function {
 		this.op1 = op1;
 	}
 	
-	public String print() {
-		
-		return "ln(" + op1.print() + ")";
-	}
+	public String toString() { return "ln(" + op1.toString() + ")"; }
 	
 	public Mult ableiten() {
 		

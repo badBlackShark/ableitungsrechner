@@ -11,7 +11,7 @@ public class Constant extends Function {
 		return op1;
 	}
 
-	public String print() {
+	public String toString() {
 		return Integer.toString(op1);
 	}
 	
